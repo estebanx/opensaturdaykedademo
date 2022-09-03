@@ -1,5 +1,5 @@
 
-# THIS REPO contains all the files to run the demo that was show in the OpenSaturday of September 3,2022
+# This repo contains all the files to run the demo that was show in the OpenSaturday of September 3,2022
 
 This demo will configure a Kubernetes Cluster in Azure and configure it with KEDA with the purpose that scaled Azure DevOps Agents. Here the steps:
 
