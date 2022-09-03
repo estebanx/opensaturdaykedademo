@@ -22,15 +22,10 @@ docker run -e AZP_URL=https://dev.azure.com/estebanx `
   opensaturdaycontainerregistry.azurecr.io/dockeragent:ubuntu-20.04
 
 # convert agent variables value to base64 in order to be able to be saved in the deployment file
-
-```bash
-#convert a string to base64
 echo -n '' | openssl base64
 
 # deploy a Deployment to run the container build agent in Kubernetes
 kubectl apply -f ./k8s/deployment-agent.yaml
 
-
-```bash
 # deploy KEDA's scaledObject to scale out/in the build agents based on number of waiting jobs:
 kubectl apply -f ./k8s/scaledObject-keda.yaml
